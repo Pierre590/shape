@@ -10,7 +10,7 @@ abstract class Shape  //pr placer un prerequis : calcul  obligatoire du perimetr
     }
     public function displayPerimeter($unit = "m")
     {
-        if ($unit === "mm") {
+        if ($unit === "mm") {   //condition m en mm en fonction de l'attribut ds index//
             $perimeter = $this->perimeterToMm();
         } else{
             $perimeter = $this->perimeter();
@@ -26,7 +26,7 @@ abstract class Shape  //pr placer un prerequis : calcul  obligatoire du perimetr
     {
         return $this->perimeter() * 1000;
     }
-    
+
     abstract public function perimeter();
     abstract public function area();
 }
