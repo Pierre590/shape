@@ -20,8 +20,9 @@ echo '</br>';
 $square2->displayPerimeter('mm');
 echo '</br>';
 
-$square1->displayarea();
+$square1->displayArea();
 echo '</br>';
+
 
 echo "la surface du carré est de " .$square1->area(). " m²";
 echo '</br>';

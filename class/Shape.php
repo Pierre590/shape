@@ -26,11 +26,7 @@ abstract class Shape  //pr placer un prerequis : calcul  obligatoire du perimetr
     {
         return $this->perimeter() * 1000;
     }
-    public function areaToMm()
-    {
-        return $this->area() * 1000;
-        echo "Le ". $this->name ." à un périmetre de ".$mm." mm";
-    }
+    
     abstract public function perimeter();
     abstract public function area();
 }
