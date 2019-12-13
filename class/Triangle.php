@@ -6,11 +6,12 @@ class Triangle extends Shape
     private $b;
     private $d;
 
-    public function __construct($h,$b,$d)
+    public function __construct($h,$b,$d,$name)
     {
         $this->h=$h;
         $this->b=$b;
         $this->d=$d;
+        parent::__construct($name);
     }
     public function perimeter()
     {
