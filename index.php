@@ -8,11 +8,16 @@ $square1 = new Carre(10, "carre 1");
 $square2 = new Carre(24, "carre 2");
 
 
-$square1->displayperimeter();
+$square1->displayPerimeter('mm');
+echo '</br>';
+$square1->displayPerimeter('m');
 echo '</br>';
 
-$square2->displayperimeter();
+
+$square2->displayPerimeter();
 //echo "le carré à un périmetre de " .$square2->perimeter(). " m";//
+echo '</br>';
+$square2->displayPerimeter('mm');
 echo '</br>';
 
 $square1->displayarea();
